@@ -4,9 +4,9 @@ import { Typewriter } from "@/components/ui/typewriter-text";
 import Link from "next/link";
 
 const HERO_TYPEWRITER_LINES: string[] = [
-  "Weby které přivádějí klienty.",
-  "AI nástroje pro váš byznys.",
-  "Hotovo za 7 dní.",
+  "Weby které prodávají, ne jen hezky vypadají.",
+  "AI nástroje nezbytné k podnikání v dnešní době.",
+  "Váš byznys online za 7 dní.",
 ];
 
 export function HeroSection() {
@@ -28,21 +28,22 @@ export function HeroSection() {
             />
           </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-[#f0f4ff]/75">
-            Stavíme digitální základy, které vypadají skvěle, prodávají a šetří
-            vám čas. Od strategie po realizaci během jednoho týdne.
+            Jsme tým který chce pomáhat podnikatelům růst. Stavíme weby s novodobým designem
+            který je přehledný, udrží pozornost zákazníka a přivádí poptávky — a AI
+            systémy které pracují za vás.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
-              href="/prace"
+              href="/sluzby"
               className="inline-flex rounded-full bg-[#2563eb] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#1d4ed8] sm:text-base"
             >
-              Zobrazit naši práci →
+              Chci web který prodává →
             </Link>
             <Link
-              href="/kontakt"
+              href="/prace"
               className="inline-flex rounded-full border border-[#c9a84c]/60 px-6 py-3 text-sm font-medium text-[#f6dd93] transition hover:bg-[#c9a84c]/15 sm:text-base"
             >
-              Nezávazná konzultace
+              Prohlédnout práce
             </Link>
           </div>
         </div>

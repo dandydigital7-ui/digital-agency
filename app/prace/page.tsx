@@ -24,8 +24,8 @@ export default function PracePage() {
     <SubpageShell>
       <PageHero
         subtitle="Práce"
-        title="Ukázky projektů a reálné výsledky."
-        description="Každý projekt staví na konkrétních metrikách: více leadů, více schůzek, více klientů."
+        title="Naše práce"
+        description="Reálné projekty. Reálné výsledky. Žádné šablony."
       />
       <section className="mx-auto mt-10 grid w-full max-w-6xl gap-4 px-4 md:grid-cols-3">
         {projects.map((project) => (

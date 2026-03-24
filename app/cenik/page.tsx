@@ -25,8 +25,8 @@ export default function CenikPage() {
     <SubpageShell>
       <PageHero
         subtitle="Ceník"
-        title="Transparentní balíčky bez překvapení."
-        description="Vyberte si rozsah, který dává smysl vašim cílům. Přesnou kalkulaci dostanete po krátkém callu."
+        title="Kalkulačka cen"
+        description="Zjistěte přesnou cenu za 2 minuty. Bez skrytých poplatků."
       />
       <section className="mx-auto mt-10 grid w-full max-w-6xl gap-4 px-4 md:grid-cols-3">
         {plans.map((plan) => (

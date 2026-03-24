@@ -4,16 +4,24 @@ import { SubpageShell } from "@/components/subpage-shell";
 
 const services = [
   {
-    title: "Web na míru",
-    text: "Kombinace strategie, copywritingu a designu pro maximální konverze.",
+    title: "Weby které prodávají",
+    text: "97 % lidí hledá firmu online než jí zavolá. Váš web musí zaujmout do 3 sekund — jinak zákazník odchází ke konkurenci. Stavíme weby s moderním designem, které se načtou za 2 sekundy, fungují na mobilu a přivádějí zákazníky z Googlu.",
   },
   {
-    title: "Redesign webu",
-    text: "Zlepšíme rychlost, strukturu i důvěryhodnost vašeho aktuálního webu.",
+    title: "AI Recepční 24/7",
+    text: "Nikdy nezmešká hovor. Odpovídá, rezervuje termíny a posílá potvrzení — i v noci a o víkendu. Průměrná úspora 15 000 Kč/měsíc oproti klasické recepční.",
   },
   {
-    title: "AI automatizace",
-    text: "Zavedeme AI workflow, které zrychlí odpovědi, lead management i obsah.",
+    title: "AI Chatbot na web",
+    text: "Návštěvník přijde na web, chatbot ho provede, odpoví na otázky a převede ho na poptávku. Automaticky, 24/7. Průměrně 3x více poptávek z webu.",
+  },
+  {
+    title: "AI Follow-up systém",
+    text: "Po každé návštěvě nebo poptávce systém automaticky posílá zprávy a připomínky. Průměrně 40 % více uzavřených obchodů bez vaší práce.",
+  },
+  {
+    title: "AI správa recenzí",
+    text: "Každá Google recenze dostane profesionální odpověď do 5 minut. Lepší reputace na Googlu = více zákazníků každý měsíc.",
   },
 ];
 
@@ -21,9 +29,9 @@ export default function SluzbyPage() {
   return (
     <SubpageShell>
       <PageHero
-        subtitle="Služby"
-        title="Weby a AI, které opravdu pomáhají růst."
-        description="Vybíráme jen to, co má pro vaše podnikání reálný dopad. Bez zbytečné složitosti."
+        subtitle="Web a AI nástroje pod jednou střechou — vše co moderní podnikatel potřebuje."
+        title="Co nabízíme"
+        description="Web a AI nástroje pod jednou střechou — vše co moderní podnikatel potřebuje."
       />
       <section className="mx-auto mt-10 grid w-full max-w-6xl gap-4 px-4 md:grid-cols-3">
         {services.map((service) => (
