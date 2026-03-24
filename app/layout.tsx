@@ -16,9 +16,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "EH Studio | Weby a AI pro podnikatele",
+  metadataBase: new URL("https://ehstudio.cz"),
+  title: "EH Studio | Tvorba webů a AI nástroje | CZ/SK",
   description:
-    "Česká digitální agentura EH Studio. Tvorba webů, AI nástroje a strategie pro růst podnikání.",
+    "Stavíme weby které prodávají a implementujeme AI nástroje pro české a slovenské podnikatele. Demo do 24 hodin, web za 7 dní.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    locale: "cs_CZ",
+    url: "/",
+    siteName: "EH Studio",
+    title: "EH Studio | Tvorba webů a AI nástroje | CZ/SK",
+    description:
+      "Stavíme weby které prodávají a implementujeme AI nástroje pro české a slovenské podnikatele. Demo do 24 hodin, web za 7 dní.",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "EH Studio - Tvorba webů a AI nástroje",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EH Studio | Tvorba webů a AI nástroje | CZ/SK",
+    description:
+      "Stavíme weby které prodávají a implementujeme AI nástroje pro české a slovenské podnikatele.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

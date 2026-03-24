@@ -1,7 +1,8 @@
 "use client";
 
 import FloatingLines from "@/components/FloatingLines";
-import { FLOATING_LINES_GRADIENT } from "@/components/floating-lines-backdrop";
+
+const FLOATING_LINES_GRADIENT = ["#2563eb", "#ffffff", "#dc2626"] as const;
 
 /**
  * Single full-viewport FloatingLines layer — use once in root layout.

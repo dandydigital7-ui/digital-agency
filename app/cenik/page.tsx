@@ -1,54 +1,35 @@
+import type { Metadata } from "next";
 import Link from "next/link";
-import { PageHero } from "@/components/page-hero";
-import { SubpageShell } from "@/components/subpage-shell";
 
-const plans = [
-  {
-    name: "Start",
-    price: "od 29 000 Kč",
-    details: ["Jednostránkový nebo menší firemní web", "Základní SEO", "Dodání do 7 dní"],
-  },
-  {
-    name: "Growth",
-    price: "od 49 000 Kč",
-    details: ["Vícepodstránkový web", "Konverzní copywriting", "Analytika a měření"],
-  },
-  {
-    name: "Scale + AI",
-    price: "od 79 000 Kč",
-    details: ["Web + AI workflow", "Automatizace leadů", "Měsíční podpora"],
-  },
-];
+export const metadata: Metadata = {
+  title: "Ceník | Kalkulačka cen webů | EH Studio",
+};
 
 export default function CenikPage() {
   return (
-    <SubpageShell>
-      <PageHero
-        subtitle="Ceník"
-        title="Kalkulačka cen"
-        description="Zjistěte přesnou cenu za 2 minuty. Bez skrytých poplatků."
-      />
-      <section className="mx-auto mt-10 grid w-full max-w-6xl gap-4 px-4 md:grid-cols-3">
-        {plans.map((plan) => (
-          <article key={plan.name} className="surface-card rounded-2xl p-6">
-            <h2 className="text-2xl font-medium">{plan.name}</h2>
-            <p className="mt-3 text-2xl text-[#f6dd93]">{plan.price}</p>
-            <ul className="mt-4 space-y-2 text-[#f0f4ff]/75">
-              {plan.details.map((detail) => (
-                <li key={detail}>• {detail}</li>
-              ))}
-            </ul>
-          </article>
-        ))}
-      </section>
-      <div className="mx-auto mt-10 w-full max-w-6xl px-4">
+    <section className="relative z-10 mx-auto flex min-h-[calc(100vh-10rem)] w-full max-w-6xl items-center px-4 py-16">
+      <div className="w-full rounded-3xl border border-emerald-500/40 bg-[#0f2a23]/30 p-8 backdrop-blur-sm md:p-12">
+        <p className="text-sm uppercase tracking-[0.3em] text-emerald-300/90">CENÍK</p>
+        <h1 className="mt-3 text-4xl font-semibold leading-tight text-[#f0f4ff] md:text-6xl">
+          Zjistěte cenu za 2 minuty.
+        </h1>
+        <p className="mt-4 max-w-2xl text-lg text-[#f0f4ff]/80">
+          Bez skrytých poplatků. Bez závazků. Jen čísla která dávají smysl.
+        </p>
+
         <Link
-          href="/kontakt"
-          className="inline-flex rounded-full border border-[#c9a84c]/70 px-6 py-3 font-medium text-[#f6dd93] transition hover:bg-[#c9a84c]/15"
+          href="/cenik/kalkulacka"
+          className="mt-8 inline-flex rounded-full bg-[#2563eb] px-8 py-4 text-lg font-medium text-white transition hover:bg-[#1d4ed8]"
         >
-          Nechat si připravit nabídku
+          Spočítat cenu →
         </Link>
+
+        <div className="mt-8 grid gap-3 text-sm text-[#d9ffef]/90 md:grid-cols-3 md:text-base">
+          <p>✓ Demo do 24 hodin</p>
+          <p>✓ Web za 7 dní</p>
+          <p>✓ Férová cena</p>
+        </div>
       </div>
-    </SubpageShell>
+    </section>
   );
 }

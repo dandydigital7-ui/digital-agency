@@ -1,7 +1,10 @@
-"use client";
-
+import type { Metadata } from "next";
 import { HeroSection } from "@/components/hero-section";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "EH Studio | Weby a AI nástroje pro podnikatele",
+};
 
 export default function Home() {
   const stats = [

@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import { PageHero } from "@/components/page-hero";
 import { SubpageShell } from "@/components/subpage-shell";
+
+export const metadata: Metadata = {
+  title: "Jak pracujeme | Proces spolupráce | EH Studio",
+};
 
 const steps = [
   {

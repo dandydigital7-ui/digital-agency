@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/page-hero";
 import { SubpageShell } from "@/components/subpage-shell";
+
+export const metadata: Metadata = {
+  title: "Služby | Tvorba webů a AI nástroje | EH Studio",
+};
 
 const services = [
   {
